@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Getter Setter Counter</title>
+    <script>
+        let counter = {
+            value: 0,
+
+            get count() {
+                return this.value;
+            },
+
+            set count(val) {
+                this.value = val;
+            }
+        };
+
+        function increase() {
+            counter.count = counter.count + 1;
+            document.getElementById("output").innerHTML = counter.count;
+        }
+    </script>
+</head>
+<body>
+
+    <h2 id="output">0</h2>
+
+    <button onclick="increase()">Count</button>
+
+</body>
+</html>

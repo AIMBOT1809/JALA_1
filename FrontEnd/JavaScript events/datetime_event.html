@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Time Event</title>
+</head>
+<body>
+
+    <h2 id="output"></h2>
+    <button id="btn">Show Current Date & Time</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            let current = new Date();
+            document.getElementById("output").innerHTML = current;
+        });
+    </script>
+
+</body>
+</html>

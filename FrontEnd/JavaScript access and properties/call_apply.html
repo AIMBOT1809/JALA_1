@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Call and Apply</title>
+    <script>
+        function greet(city, country) {
+            return this.name + " from " + city + ", " + country;
+        }
+
+        let person = { name: "Anish" };
+
+        let result1 = greet.call(person, "Hyderabad", "India");
+        let result2 = greet.apply(person, ["Hyderabad", "India"]);
+
+        console.log(result1);
+        console.log(result2);
+    </script>
+</head>
+<body>
+
+    <h3>Check console for output</h3>
+
+</body>
+</html>

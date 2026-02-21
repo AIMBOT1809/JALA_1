@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Layout</title>
+    <style>
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .fixed {
+            table-layout: fixed;
+        }
+
+        .auto {
+            table-layout: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Table Layout Fixed</h3>
+    <table class="fixed">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Anish</td>
+            <td>This column width is fixed equally.</td>
+        </tr>
+    </table>
+
+    <h3>Table Layout Auto</h3>
+    <table class="auto">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Anish</td>
+            <td>This column width adjusts according to content size.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positions</title>
+    <style>
+        .static { position: static; background: lightgray; }
+
+        .relative {
+            position: relative;
+            left: 30px;
+            background: lightgreen;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            background: lightcoral;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: yellow;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: orange;
+        }
+
+        div {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        body {
+            height: 1500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fixed">Fixed</div>
+
+    <div class="static">Static</div>
+
+    <div class="relative">Relative</div>
+
+    <div class="absolute">Absolute</div>
+
+    <div class="sticky">Sticky</div>
+
+</body>
+</html>

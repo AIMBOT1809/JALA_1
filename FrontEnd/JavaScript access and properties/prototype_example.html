@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype Example</title>
+    <script>
+        function Person(name) {
+            this.name = name;
+        }
+
+        Person.prototype.age = 20;
+        Person.prototype.greet = function () {
+            return "Hello " + this.name;
+        };
+
+        let p1 = new Person("Anish");
+
+        console.log(p1.name);
+        console.log(p1.age);
+        console.log(p1.greet());
+    </script>
+</head>
+<body>
+
+    <h3>Check console for prototype output</h3>
+
+</body>
+</html>
